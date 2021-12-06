@@ -11,3 +11,118 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+nav {
+  padding: 0 1rem;
+}
+
+.content {
+  min-height: calc(100vh - 50px - 65px);
+  padding: 20px;
+  width: 100%;
+}
+
+.goods {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+   
+}
+
+.card {
+  width: 15rem;
+  height: 30rem;
+}
+
+.card-image {
+  height: 60%;
+}
+
+.card-content {
+  height: 20%;
+}
+
+.card-action {
+  height: 20%;
+}
+
+.card-image img {
+  height: 100%;
+}
+
+.right {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.app {
+  width: 100%;
+}
+
+.cart {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  z-index: 5;
+  padding: 1rem;
+}
+
+@media (min-width: 767px) {
+  .cart {
+    top: 5rem;
+    bottom: unset;
+  }
+}
+
+
+
+.basket-list {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: white;
+  width: 50rem;
+  max-width: 95%;
+  box-shadow: inset -1px 3px 8px 5px lightskyblue, 2px 5px 16px 0px darkblue, 5px 5px 15px 5px black;
+
+  animation: show 500ms ease-in-out;
+}
+
+.basket-close {
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+@keyframes show {
+  from {top: 70%; opacity: 0;}
+  to {top: 50%; opacity: 1;}
+}
+
+.in-de {
+  font-size: 20px;
+  margin: 10px 5px;
+  font-weight: 700;
+  color: #26a69a;
+}
+
+.order-btn {
+  position: fixed;
+    right: 10px;
+    bottom: 5px;
+}
+
+.toast-container {
+  position: fixed;
+  top: 2rem;
+  right: 8rem;
+}
